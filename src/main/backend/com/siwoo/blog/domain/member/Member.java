@@ -1,4 +1,4 @@
-package com.siwoo.blog.domain;
+package com.siwoo.blog.domain.member;
 
 import lombok.*;
 
@@ -24,10 +24,11 @@ public class Member {
 
     private String password;
 
-    @Enumerated(EnumType.STRING)
-    private Level level;
+    @Enumerated(EnumType.STRING) @Builder.Default
+    private Level level = Level.BRONZE;
 
-    private int point;
+    @Builder.Default
+    private int point = 0;
 
     public enum Level{
         GOLD(null), SILVER(GOLD), BRONZE(SILVER);
@@ -46,7 +47,7 @@ public class Member {
         int restPoint = this.point - amount;
 
         if(restPoint < 0 ){
-            throw new IllegalStateException("User point is not enough & THIS EXCEPTION MUST BE CHANGED");
+            throw new MemberDomainException("Member[point:"+point+"] does not have enough point","notEnough.member.point");
         }
 
         this.point = restPoint;

@@ -1,0 +1,5 @@
+
+notEnough - describe deficit which is related to amount of something
+
+Member
+notEnough.member.point = 멤버 오브젝트의 포인트가 충분치 않음.
