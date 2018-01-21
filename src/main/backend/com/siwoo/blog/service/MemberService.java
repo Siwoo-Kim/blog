@@ -10,7 +10,6 @@ import java.util.List;
 @Transactional
 public interface MemberService {
 
-
     void join(Member member);
 
     @Transactional(readOnly = true)
