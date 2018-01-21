@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatButtonModule, MatCardModule, MatInputModule, MatRadioModule, MatToolbarModule, MatSnackBarModule} from "@angular/material";
 
 
 @NgModule({
@@ -12,11 +14,14 @@ import {FormsModule} from "@angular/forms";
     AppComponent
   ],
   imports: [
-    /* ANGULAR MODULE */,
-    BrowserModule,HttpModule,
-    FormsModule,
-    /* APP MODULE */,
+    /* Angular Module */
+    BrowserModule,HttpModule,FormsModule,
 
+    /* Animation and Material Module */
+    BrowserAnimationsModule,
+    MatToolbarModule, MatSnackBarModule, MatCardModule,
+    MatInputModule, MatRadioModule, MatButtonModule,
+    /* App Module */,
   ],
   providers: [],
   bootstrap: [AppComponent]

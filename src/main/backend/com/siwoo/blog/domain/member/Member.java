@@ -24,6 +24,7 @@ public class Member {
 
     private String password;
 
+    @Column(name="MEMBER_LEVEL")
     @Enumerated(EnumType.STRING) @Builder.Default
     private Level level = Level.BRONZE;
 
