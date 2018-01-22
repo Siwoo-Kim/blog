@@ -10,6 +10,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AsideComponent } from './components/aside/aside.component';
 import { MainDashboardComponent } from './components/main-dashboard/main-dashboard.component';
+import {RouterModule} from "@angular/router";
+import {routes} from "./app.routes";
 
 
 @NgModule({
@@ -21,10 +23,14 @@ import { MainDashboardComponent } from './components/main-dashboard/main-dashboa
     MainDashboardComponent
   ],
   imports: [
+    /* Angular Module */
     BrowserModule,
     HttpModule,
+    RouterModule.forRoot(routes),
+    /* Angular Animation & Material Module */
     BrowserAnimationsModule,
     MatSnackBarModule,MatCardModule,MatButtonModule,
+    /* App Module */
   ],
   providers: [],
   bootstrap: [AppComponent]
