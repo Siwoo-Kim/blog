@@ -3,6 +3,7 @@ package com.siwoo.blog.domain.member;
 import lombok.*;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Getter @Setter @ToString @Builder
 @NoArgsConstructor @AllArgsConstructor
@@ -20,9 +21,12 @@ public class Member {
 
     private String email;
 
-    private int age;
+    private Integer age;
 
     private String password;
+
+    @Builder.Default
+    private LocalDateTime joinDate = LocalDateTime.now();
 
     @Column(name="MEMBER_LEVEL")
     @Enumerated(EnumType.STRING) @Builder.Default
