@@ -22,10 +22,33 @@
   </nav>
 </div>
 
-<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-  <div class="col-md-6 px-0">
-    <h1 class="display-4 font-italic">JUMBOTRON</h1>
-    <p class="lead my-3">INTRODUCE</p>
-    <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">About me...</a></p>
-  </div>
+<div class="container">
+<div class="p-3 p-md-5 rounded bg-dark">
+  <mat-tab-group class="blog-tab-group">
+    <mat-tab label="Tab 1">
+      <div class="blog-tab-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+        Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+        In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+        feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+        orci enim rutrum enim, vel tempor sapien arcu a tellus.
+      </div>
+    </mat-tab>
+    <mat-tab label="Tab 2">
+      <ng-template mat-tab-label>
+        ⭐
+      </ng-template>
+      <div class="blog-tab-content" disabled>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+        Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+        In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+        feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+        orci enim rutrum enim, vel tempor sapien arcu a tellus.
+      </div>
+    </mat-tab>
+    <mat-tab label="Tab 5">
+      No content
+    </mat-tab>
+  </mat-tab-group>
+</div>
 </div>

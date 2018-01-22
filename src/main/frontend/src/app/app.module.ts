@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {MatButtonModule, MatCardModule, MatSnackBarModule} from "@angular/material";
+import {MatButtonModule, MatCardModule, MatSnackBarModule, MatTabsModule} from "@angular/material";
 import {HttpModule} from "@angular/http";
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -29,7 +29,7 @@ import {routes} from "./app.routes";
     RouterModule.forRoot(routes),
     /* Angular Animation & Material Module */
     BrowserAnimationsModule,
-    MatSnackBarModule,MatCardModule,MatButtonModule,
+    MatSnackBarModule,MatCardModule,MatButtonModule,MatTabsModule,
     /* App Module */
   ],
   providers: [],

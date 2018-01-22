@@ -1,14 +1,14 @@
 
 .blog-header {
+  position: relative;
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
   z-index: 999;
   background-image: none;
   filter: none;
   border: none;
-  border-top: 2px solid cornflowerblue;
+  border-top: 7px solid cornflowerblue;
   box-shadow: none;
-  position: relative;
   border-radius: 0;
   padding: 0;
 
@@ -22,13 +22,10 @@
   text-decoration: none;
 }
 
-.jumbotron{
-  background-color: #e5e5e5;
-}
-
 .display-4 {
   font-size: 2.5rem;
 }
+
 @media (min-width: 768px) {
   .display-4 {
     font-size: 3rem;
@@ -76,4 +73,16 @@
 .h-250 { height: 250px; }
 @media (min-width: 768px) {
   .h-md-250 { height: 250px; }
+}
+
+.blog-tab-group {
+  border: 1px solid #e8e8e8;
+  border-top: 4px solid cornflowerblue;
+  margin: 0px;
+  margin-bottom: 34px;
+}
+
+.blog-tab-content {
+  min-height: 85px;
+  font-size: 1.1em;
 }
