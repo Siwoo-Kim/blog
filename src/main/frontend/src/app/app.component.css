@@ -1,0 +1,68 @@
+/* stylelint-disable selector-list-comma-newline-after */
+
+body, h1, h2, h3, input, p {
+  margin: 0;
+  font-weight: 400;
+  font-family: "Varela Round",sans-serif;
+  color: #34302d;
+}
+
+body {
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #fff;
+}
+.border-top { border-top: 1px solid #e5e5e5; }
+
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+/*
+ * Blog name and description
+ */
+.blog-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.blog-main-title{
+  font-family: Montserrat,sans-serif;
+  margin-bottom: 10px;
+}
+
+.blog-description {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+@media (min-width: 40em) {
+  .blog-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+
